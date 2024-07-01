@@ -7,8 +7,9 @@ html {
 }
 
 #main-div {
-    width: 75%;
+    width: 70%;
     display: inline-block;
+    margin-left: 3%;
 }
 
 /*Navigation Bar*/
@@ -88,6 +89,51 @@ html {
     font-weight: bold;
 }
 
+/* Latest Release  */
+#latest-released-songs {
+    margin-left: 3%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.latest-song {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.latest-left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2%;
+    align-items: center;
+}
+.released-song-img img{
+    height: 80px;
+    width: 80px;
+}
+
+.released-song-name p{
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 0px;
+}
+
+.released-song-date p{
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 0px;
+}
+
+.rel
+
 /* Popular Artists Card*/
 #popular-artists {
     width: 100%;
@@ -119,11 +165,12 @@ html {
 
 #stations {
     width: 100%;
-    height: 50%;
+    height: 60%;
     background-image: linear-gradient(135deg, #2857a4, #403066);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 #stations #div1 {
@@ -167,28 +214,62 @@ html {
 }
 
 #main-theme {
+    margin: auto;
+    margin-top: 1.5%;
     width: 80%;
     height: 80%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 2%;
 }
 
-.theme-content img {
-    height: 100px;
-    width: 100px;
+#theme1 {
+    position: relative;
+}
+
+.theme1-image {
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
 }
 
-.theme-content p {
-    text-align: center;
-    margin: 0px 0px;
-    margin-top: -78px;
-    font-size: x-large;
-    font-weight: bold;
-    color: azure;
-    text-shadow: 2px 2px 5px black;
+/* Music-Theme 2 */
+#music-theme2 {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
+.music-theme2 {
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+
+.theme2-image {
+    margin: 3% 0%;
+    height: 100%;
+    width: 100%;
+}
+
+.text-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.theme-name p{
+    color: rgb(243, 236, 236);
+    font-weight: bold;
+    font-size: xx-large;
+    text-shadow: 2px 2px 2px black;
+}
+
 
 /* Latest Song Card*/
 #latest-songs {
@@ -222,7 +303,7 @@ html {
 aside {
     display: inline-block;
     vertical-align: top ;
-    width: 18%;
+    width: 20%;
     margin-left: 3%;
 }
 
@@ -233,7 +314,6 @@ aside {
 }
 
 /* Song */
-
 .song {
     display: flex;
     flex-direction: row;
