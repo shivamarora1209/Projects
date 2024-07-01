@@ -10,6 +10,7 @@ html {
     width: 70%;
     display: inline-block;
     margin-left: 3%;
+    margin-top: 5%;
 }
 
 /*Navigation Bar*/
@@ -89,18 +90,47 @@ html {
     font-weight: bold;
 }
 
+/* Carousel */
+#carousel {
+    margin-left: auto;
+    margin-right: auto;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.carousel-card {
+    height: 80%;
+    width: 20%;
+}
+
+.carousel-card img{
+    height: 100%;
+    width: 100%;
+}
+
 /* Latest Release  */
 #latest-released-songs {
     margin-left: 3%;
     width: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
+}
+
+.cols {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 30%;
+    height: 100%;
 }
 
 .latest-song {
-    width: 30%;
+    margin-bottom: 2%s;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -108,13 +138,14 @@ html {
 }
 
 .latest-left {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 2%;
     align-items: center;
 }
+
 .released-song-img img{
     height: 80px;
     width: 80px;
@@ -144,6 +175,8 @@ html {
     gap: 3%;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .artist-photo img{
@@ -166,6 +199,7 @@ html {
 #stations {
     width: 100%;
     height: 60%;
+    border-radius: 2%;
     background-image: linear-gradient(135deg, #2857a4, #403066);
     display: flex;
     flex-direction: row;
@@ -215,7 +249,6 @@ html {
 
 #main-theme {
     margin: auto;
-    margin-top: 1.5%;
     width: 80%;
     height: 80%;
     display: flex;
@@ -230,8 +263,8 @@ html {
 }
 
 .theme1-image {
-    height: 120px;
-    width: 120px;
+    height: 180px;
+    width: 180px;
     border-radius: 50%;
 }
 
@@ -305,6 +338,7 @@ aside {
     vertical-align: top ;
     width: 20%;
     margin-left: 3%;
+    margin-top: 2%;
 }
 
 #queue-section {
@@ -344,4 +378,75 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* Adding Media Query */
+@media screen and (max-width: 1785px) {
+    #theme1-element-remove1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1384px) {
+    .theme1-image {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1157px) {
+    .theme1-image {
+        height: 120px;
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    /* Latest-Release */
+    #latest-song-col1 {
+        display: none;
+    }
+
+    .cols {
+        width: 45%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    aside {
+        display: none;
+    }
+
+    #main-div {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    /* Latest-Release */
+    #latest-song-col {
+        display: none;
+    }
+
+    .cols {
+        width: 45%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Theme2-Name */
+    .theme-name p{
+        font-size: x-large;
+    }
+
+    /* genre */
+    .theme1-image {
+        height: 100px;
+        width: 100px;
+    }
 }
