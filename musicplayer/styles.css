@@ -244,6 +244,26 @@ html {
     margin-top: 0px;
 }
 
+/* W3 Schools DropDown CSS*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
 /* Popular Artists Card*/
 #popular-artists {
     width: 100%;
@@ -266,14 +286,14 @@ html {
     transform: scale(0.6 0.6);
 }
 
-.artist-photo img{
+.artist-photo {
     height: 110px;
     width: 110px;
     border-radius: 50%;
     transition: 0.2s ease-in-out;
 }
 
-.artist-photo img:hover {
+.artist-photo:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 50px;
     border: 3px solid rgb(32, 31, 31);
 }
@@ -456,8 +476,19 @@ aside {
 
 #queue-section {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#queue-section-heading {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+#queue-heading p{
+    width: 50%;
 }
 
 /* Song */
